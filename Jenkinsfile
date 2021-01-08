@@ -65,7 +65,7 @@ node('master')
 
         { 
 
-             sh '/opt/maven/bin/mvn clean deploy -DaltDeploymentRepository=internal.repo::default::http://admin:admin123@18.222.187.3:8081/nexus/content/repositories/snapshots/' 
+             sh '/opt/maven/bin/mvn clean deploy -DaltDeploymentRepository=internal.repo::default::http://admin:admin123@13.58.190.66:8081/nexus/content/repositories/snapshots/' 
 
          } 
     
