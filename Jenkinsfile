@@ -23,7 +23,7 @@ node('master')
 
                   { 
 
-                        sh '/opt/maven/bin/mvn clean verify sonar:sonar -Dsonar.password=sonar -Dsonar.login=admin' 
+                        sh '/usr/share/maven/bin/mvn clean verify sonar:sonar -Dsonar.password=sonar -Dsonar.login=admin' 
 
                   } // SonarQube taskId is automatically attached to the pipeline context 
 
@@ -66,7 +66,7 @@ node('master')
 
         { 
 
-             sh '/opt/maven/bin/mvn clean deploy -DaltDeploymentRepository=internal.repo::default::http://admin:admin123@18.225.32.106:8081/nexus/content/repositories/snapshots/' 
+             sh '/usr/share/maven/bin/mvn clean deploy -DaltDeploymentRepository=internal.repo::default::http://admin:admin123@18.225.32.106:8081/nexus/content/repositories/snapshots/' 
 
          } 
 }
